@@ -1,0 +1,24 @@
+{
+    "pois": [{
+            "id": 1,
+            "name": "Laboratorium Komputer",
+            "description": "Laboratorium Komputer merupakan fasilitas pembelajaran untuk praktikum, pemrograman, dan pengolahan data.",
+            "type": "computer",
+            "targetIndex": 0
+        },
+        {
+            "id": 2,
+            "name": "Ruang Kelas",
+            "description": "Ruang kelas merupakan tempat berlangsungnya kegiatan belajar mengajar antara dosen dan mahasiswa.",
+            "type": "classroom",
+            "targetIndex": 1
+        },
+        {
+            "id": 3,
+            "name": "Ruang Dosen",
+            "description": "Ruang dosen merupakan tempat dosen melakukan aktivitas akademik dan memberikan konsultasi kepada mahasiswa.",
+            "type": "office",
+            "targetIndex": 2
+        }
+    ]
+}

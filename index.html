@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AR Tur Kampus</title>
+
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>AR TUR KAMPUS</h1>
+        <p>Tur Kelas dan Laboratorium Berbasis Augmented Reality</p>
+    </header>
+
+    <main>
+
+        <!-- PROGRES KUNJUNGAN -->
+        <section class="card">
+
+            <h2>Progres Kunjungan</h2>
+
+            <p id="progressText">0 dari 3 lokasi dikunjungi</p>
+
+            <div class="progress-container">
+                <div id="progressBar"></div>
+            </div>
+
+            <ul id="progressList"></ul>
+
+        </section>
+
+
+        <!-- AREA SCANNER -->
+        <section class="card">
+
+            <h2>AR Scanner</h2>
+
+            <p id="status">Siap digunakan</p>
+
+            <div id="ar-container">
+
+                <div id="scanMessage">
+                    Tekan Mulai Scan untuk mengaktifkan kamera
+                </div>
+
+                <!-- BINGKAI SCANNER -->
+                <div class="scan-guide">
+                    <div class="scan-corner top-left"></div>
+                    <div class="scan-corner top-right"></div>
+                    <div class="scan-corner bottom-left"></div>
+                    <div class="scan-corner bottom-right"></div>
+                </div>
+
+            </div>
+
+            <button id="startButton">
+                Mulai Scan
+            </button>
+
+            <button id="stopButton" hidden>
+                Hentikan Scan
+            </button>
+
+        </section>
+
+
+        <!-- INFORMASI LOKASI -->
+
+        <!-- INFORMASI LOKASI -->
+        <section id="infoPanel" class="card" hidden>
+
+            <h2 id="poiName">Nama Lokasi</h2>
+
+            <p id="poiDescription">
+                Informasi lokasi akan muncul di sini.
+            </p>
+
+            <button id="replayButton">
+        Putar Ulang Animasi
+    </button>
+
+        </section>
+
+
+
+        <!-- RESET PROGRES -->
+        <button id="resetButton" class="reset-button">
+            Reset Progres
+        </button>
+
+    </main>
+
+
+    <footer>
+        <p>Proyek Augmented Reality - Teknologi Informasi</p>
+    </footer>
+
+
+    <script type="module" src="/src/main.js"></script>
+
+</body>
+
+</html>
